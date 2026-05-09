@@ -64,7 +64,7 @@ streamlit run app.py
 
 # 🌐 Live Demo
 
-🔗 [View Live Application](https://your-streamlit-link.streamlit.app)
+🔗 [View Live Application](https://creditcard-fraud-detection-lhoce9sk4k4fqvdcnussvg.streamlit.app/)
 
 
 # 📂 Project Workflow
