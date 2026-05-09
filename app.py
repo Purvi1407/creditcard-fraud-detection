@@ -392,44 +392,6 @@ if predict_btn:
     st.markdown('</div>', unsafe_allow_html=True)
 
     # ---------------------------------------------------
-    # Result Card
-    # ---------------------------------------------------
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-
-    st.subheader("📊 Risk Analysis")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.metric(
-            "Risk Score",
-            f"{risk:.2f}%"
-        )
-
-    with col2:
-        if risk > 70:
-            st.metric("Risk Level", "High")
-        elif risk > 30:
-            st.metric("Risk Level", "Medium")
-        else:
-            st.metric("Risk Level", "Low")
-
-    st.progress(int(risk))
-
-    if prediction == 1:
-        st.error("🚨 Fraudulent Transaction Detected")
-        st.write(
-            "Suspicious activity detected due to unusual behavior patterns."
-        )
-    else:
-        st.success("✅ Transaction Approved")
-        st.write(
-            "Transaction behavior appears safe and legitimate."
-        )
-
-    st.markdown('</div>', unsafe_allow_html=True)
-
-    # ---------------------------------------------------
     # Summary Card
     # ---------------------------------------------------
     st.markdown('<div class="card">', unsafe_allow_html=True)
@@ -477,6 +439,6 @@ st.markdown('</div>', unsafe_allow_html=True)
 # ---------------------------------------------------
 st.markdown("""
 <div class="footer">
-Built using  Machine Learning
+Built using Machine Learning
 </div>
 """, unsafe_allow_html=True)
